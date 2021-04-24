@@ -89,7 +89,7 @@ function styles(){                                                   //Мини�
         'node_modules/normalize.css/normalize.css',
     ])
         .pipe(concat('libs.min.css'))
-        // .pipe(cssmin())
+        .pipe(cssmin())
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())
 }

@@ -1,0 +1,27 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
