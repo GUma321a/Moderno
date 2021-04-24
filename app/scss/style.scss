@@ -11,8 +11,12 @@
   margin-left: auto;
   margin-right: 50px;
   color: $text;
+  transition: all .5s;
   &-link {
     color: $red;
+  }
+  &-tel:hover{
+    color: $green;
   }
 }
 
@@ -24,6 +28,10 @@
   color: #fff;
   font-size: 12px;
   font-weight: 400;
+  transition: all .5s;
+  &:hover{
+    color: #000;
+  }
   &-login {
     background-color: $green;
   }
@@ -52,4 +60,63 @@
   &-list li + li{
       margin-left: 30px; 
   }
+  &-item{
+    transition: all .5s;
+  }
+  &-item:hover{
+    color: $green;
+  }
+}
+
+.search{
+    background-image: url(../img/bg_search.jpg);
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    &__inner{
+      padding: 150px 0 50px;
+    }
+    &__inner-title{
+        font-size: 48px;
+        line-height: 45px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__inner-subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: 400;
+    }
+    &__inner-form{
+     display: flex;
+     justify-content: center;
+     box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+     border-radius: 4px;
+    }
+    &__inner-form-input{
+      min-width: 670px;
+      border: none; 
+      height: 55px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $placeholder;
+      padding: 0 15px 0 25px;
+      
+      ::placeholder{
+        padding-left: 25px;
+      }
+    }
+    &__inner-form-btn{
+      width: 50px;
+      height: 55px;
+      border: none;
+      background-color: #fff;
+    }
 }
